@@ -1,44 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="./style.css" rel="stylesheet" />
-	<title>108AC1026 HW01</title>
-</head>
-
-<body>
-	<ul class="links">
-		<a href="https://drive.google.com/file/d/1Njbfx1ObdxYaWwU1HdPgJUyVCNiqEi-D/view?usp=sharing">下載 otf 字型檔</a>
-		<a href="https://colab.research.google.com/drive/1wrni4RN6z64vsg-Z4NSSbY466ew0SfXo?usp=sharing">連到 Colab 程式碼</a>
-		<a href="https://drive.google.com/file/d/1La2PC3dbWTUGxuiIyBezGJ8yTixJk-oy/view?usp=sharing">下載 ttf 字型檔</a>
-	</ul>
-
-	<svg viewBox="0 0 300 162">
-		<filter id="mix">
-			<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="5"/>
-			<feColorMatrix in="blur" mdoe="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -36" />
-		</filter>
-
-		<g filter="url(#mix)">
-			<rect width="300" height="50" x="0" y="50" rx="25" fill="#7f7f7f" />
-			<circle cx="40" cy="75" fill="#7f7f7f" id="pop" />
-		</g>
-	</svg>
-</body>
-
-<script type="text/javascript">
-	const pop = document.querySelector("#pop");
-	document.querySelector(".links").addEventListener('mousemove', e => {
-		let offset = (e.clientX - e.currentTarget.getBoundingClientRect().left) / 7
-		
-		if (offset <= 40) offset = 40
-		if (offset >= 260) offset = 260
-
-		pop.setAttribute('cx', offset)
-	})
-</script>
-
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<body> 
+		<h1>HW01</h1>
+		<ul class="links">
+		<ol>
+		<li><a href="https://drive.google.com/file/d/1La2PC3dbWTUGxuiIyBezGJ8yTixJk-oy/view?usp=sharing" target="_blank">下載 otf 字型檔</a></li>
+		<li><a href="https://colab.research.google.com/drive/1wrni4RN6z64vsg-Z4NSSbY466ew0SfXo?usp=sharing" target="_blank">連到 Colab 程式碼</a></li>
+		<li><a href="https://drive.google.com/file/d/1Njbfx1ObdxYaWwU1HdPgJUyVCNiqEi-D/view?usp=sharing" target="_blank">下載 ttf 字型檔</a></li>
+		</ol>
+		</ul>
+	</body>
 </html>
